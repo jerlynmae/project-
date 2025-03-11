@@ -31,7 +31,7 @@ const updateProduct = async (req, res) => {
 
 
 const deleteProduct = async (req, res) => {
-  console.log("Deleting product with ID:", req.params.id); // ✅ Debugging
+  console.log("Deleting product with ID:", req.params.id); 
   try {
     const deletedProduct = await Product.findByIdAndDelete(req.params.id);
     if (!deletedProduct) {
